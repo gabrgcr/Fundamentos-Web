@@ -27,12 +27,17 @@
     align-items: center;
 }
 
+.footer{
+    background-color:ghostwhite;
+}
+
 .menu{
     background-color: rgb(42, 40, 51);
     list-style-type: none;
     padding: 0;
     display: flex;
     flex: auto;
+    justify-content: space-around;
 }
 
 .menu a{
@@ -41,6 +46,7 @@
     font-weight: 500;
     display: block;
     padding: 15px;
+    
 }
 
 .menu a:hover{
@@ -69,3 +75,19 @@
     ::-webkit-scrollbar-thumb:hover {
         background: grey;
     }
+
+/* Contato */
+.containercontato{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: 10px;
+    align-content: flex-start;
+}
+
+.alinhaconteudo{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
