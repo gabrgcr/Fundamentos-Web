@@ -90,4 +90,24 @@
     flex-flow: nowrap;
     justify-content: space-evenly;
     align-items: center;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+input{
+    border-radius: 3px;
+    border-color:rgb(139, 139, 139);
+    border-style: solid;
+    border-width: 1px;
+}
+
+input:hover{
+    border-color:rgb(170, 170, 170);
+    background-color: honeydew;
+    border-style: solid;
+}
+
+input:focus{
+    border-color:palegoldenrod;
+    background-color: ghostwhite;
+    border-style: solid;
 }
