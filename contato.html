@@ -20,10 +20,10 @@
             <div class="containercontato"><label for="nome">Nome:</label>
             <input type="text" id="nome" onkeyup='validaNome()'></div>
             <div class="containercontato"><label for="email">Email:</label>
-            <input type="text" id="email"></div>
+            <input type="email" id="email" onkeyup="validaEmail()"></div>
             <div class="containercontato"><label for="assunto">Assunto:</label>
             <textarea name="assunto" id="assunto" cols="60" rows="10">Fala ae</textarea></div>
-            <div class="containercontato"><button>Enviar</button></div>
+            <div class="containercontato"><button onclick="enviar()">Enviar</button></div>
         </form>
         </div>
         <div class="containercontato">
@@ -31,7 +31,7 @@
         <p>São Paulo, SP</p>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.220335201835!2d-46.661108385036194!3d-23.524576366119923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce580eefad7431%3A0x3b6ecca00f7d259f!2sR.%20do%20Bosque%20-%20Barra%20Funda%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623856828624!5m2!1spt-BR!2sbr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
         </div>
     </div>
     <script src="assets/scripts/script.js"></script>
